@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.temperature.temperatureapp;
+
+/**
+ * @author franc
+ *
+ */
+public class temperatureController {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

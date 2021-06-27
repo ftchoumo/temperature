@@ -19,6 +19,7 @@ public class temperatureController {
     @GetMapping("/celsiusTemperature")
 	public String convertingCelsiusValue(@PathParam("c") double c, Model model) {
     	
+    	
 		return "my temperature";
 
 	}

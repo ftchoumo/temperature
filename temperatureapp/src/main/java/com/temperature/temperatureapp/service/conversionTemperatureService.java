@@ -25,6 +25,12 @@ public double convertFromCelsiusToRankineTemperatue(double c) {
 	
 }
 
+public double convertFromCelsiusToCelsiusTemperatue(double c) {
+	double cel =0;
+	cel = c ;
+	return cel;		
+}
+
 //convert from Fahrenheit
 
 public double convertFromFahrenheitToCelsiusTemperature(double f) {
@@ -43,6 +49,12 @@ public double convertFromFahrenheitToRankineTemperature(double f) {
 	double r= 0;
 	r = f + 459.67;
 	return r;
+}
+
+public double convertFromFahrenheitToFahrenheitTemperature(double f) {
+	double fa= 0;
+	fa = f;
+	return fa;
 }
 
 //convert from Kelvin
@@ -65,6 +77,12 @@ public double convertFromKelvinToRankineTemperature(double k) {
 	return r;
 }
 
+public double convertFromKelvinToKelvinTemperature(double k) {
+	double ke= 0;
+	ke= k ;
+	return ke;
+}
+
 //convert from Rankine
 
 public double convertFromRankineToCelsiusTemperature(double r) {
@@ -85,6 +103,11 @@ public double convertFromRankineToKelvinTemperature(double r) {
 	return k;
 }
 
+public double convertFromRankineToRankineTemperature(double r) {
+	double ra= 0;
+	ra = r ;
+	return ra;
+}
 
 }
 

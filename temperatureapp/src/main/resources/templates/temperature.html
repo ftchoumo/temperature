@@ -7,55 +7,50 @@
 </head>
 
 <body>
-	<div id="calculatorWrap">
-		<!-- InstanceBeginEditable name="Calculator" -->
-		<form action="temperature.php" method="post" class="calculatorForm" id="CalculatorForm" name="CalculatorForm"
-			onsubmit="calculateButtonWorking()">
-			<h2 itemprop="name" class="calculatorTitle">Convert Temperature</h2>
-			<div class="calculatorInputs">
-				<div class="calculatorInputGroup">
-					<label for="input_value">Value to Convert:</label>
-					
-					<input id="input_value" name="input_value" value="" class="nmbr_real real" type="text"
-						title="real number" autofocus required />						
-				</div>
-				</br>
-				<div class="calculatorInputGroup">
-					<label for="input">From:</label> <select name="input" id="input" size="1">
-						<option value="celsius" selected="selected">Celsius (&deg;C)</option>
-						<option value="fahrenheit">Fahrenheit (&deg;F)</option>
-						<option value="kelvin">kelvin (K)</option>
-						<option value="rankine">Rankine (&deg;R)</option>
-					</select>
-				</div>
-				<br>
-				<div class="calculatorInputGroup">
-					<label for="output">To:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-					<select name="output" id="output" size="1">
-						<option value="celsius">Celsius (&deg;C)</option>
-						<option value="fahrenheit" selected="selected">Fahrenheit (&deg;F)</option>
-						<option value="kelvin">kelvin (K)</option>
-						<option value="rankine">Rankine (&deg;R)</option>
-					</select>
-				</div>
-			</div>
-			</br>
-			<div>
-				<input type="submit" value="Calculate" class="btn" name="calculateButton" id="calculateButton">
-				<input type="reset" name="reset" value="Clear" class="btn" onclick="return resetCalculator(this.form);">
-			</div>
-			<div class="clearBoth"></div>
-			</br>
-			<div id="calculatorAnswer"> Result:
-				<br>
-				<div id="answer"><br></div>
-			</div>
-			<input type="hidden" name="action" value="solve" />
-			<input type="hidden" name="page_id" value="MTYyNDg1Mjk5Mw==" />
-		</form>
-		<!-- InstanceEndEditable -->
 
-	</div>
+	<form action="tempature.php" method="post" class="calculatorForm" id="CalculatorForm" name="CalculatorForm"
+		onsubmit="calculateButtonWorking()">
+		<h2 itemprop="name" class="calculatorTitle">Result Validation</h2>
+		<div class="row">
+			<div class="col">
+				<label for="formGroupExampleInput">Input Numerical Value: </label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Value to Convert">
+			</div>
+			</br>
+			<div class="col">
+				<label for="formGroupExampleInput1">Input Unit of Measure: </label>
+				<input type="text" class="form-control" id="formGroupExampleInput1"
+					placeholder="Temperature to Convert">
+			</div>
+		</div>
+		</br>
+		<div class="row">
+			<div class="col">
+				<label for="formGroupExampleInput">Target Unit of Measure: </label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Target Temperature">
+			</div>
+			</br>
+			<div class="col">
+				<label for="formGroupExampleInput1">Student Response: </label>
+				<input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Student Value">
+			</div>
+			</br>
+			<div class="form-group row">
+				<label for="staticEmail" class="col-sm-2 col-form-label">Output</label>
+				<div class="col-sm-10">
+					<input type="text" readonly class="form-control-plaintext" id="staticEmail"
+						placeholder="Result">
+				</div>
+			</div>
+		</div>
+		</br>
+		<input type="submit" value="Validate" class="btn" name="calculateButton" id="calculateButton">
+		<input type="reset" name="reset" value="Clear" class="btn" onclick="return resetCalculator(this.form);">
+		</div>
+		<div class="clearBoth"></div>
+	</form>
+
+
 
 </body>
 
